@@ -23,6 +23,8 @@
 		39E0BB191818A09B00595A47 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39E0BB171818A09B00595A47 /* InfoPlist.strings */; };
 		39E0BB1B1818A09B00595A47 /* DribbbleConceptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E0BB1A1818A09B00595A47 /* DribbbleConceptTests.m */; };
 		39E0BB251818C51800595A47 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E0BB241818C51800595A47 /* QuartzCore.framework */; };
+		39E0BB281819B31900595A47 /* GridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E0BB271819B31900595A47 /* GridViewController.m */; };
+		39E0BB2B1819B7E700595A47 /* Acell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E0BB2A1819B7E700595A47 /* Acell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		39E0BB181818A09B00595A47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		39E0BB1A1818A09B00595A47 /* DribbbleConceptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DribbbleConceptTests.m; sourceTree = "<group>"; };
 		39E0BB241818C51800595A47 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		39E0BB261819B31900595A47 /* GridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridViewController.h; sourceTree = "<group>"; };
+		39E0BB271819B31900595A47 /* GridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridViewController.m; sourceTree = "<group>"; };
+		39E0BB291819B7E700595A47 /* Acell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acell.h; sourceTree = "<group>"; };
+		39E0BB2A1819B7E700595A47 /* Acell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Acell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,10 @@
 				39E0BAFE1818A09B00595A47 /* Main.storyboard */,
 				39E0BB011818A09B00595A47 /* FirstViewController.h */,
 				39E0BB021818A09B00595A47 /* FirstViewController.m */,
+				39E0BB261819B31900595A47 /* GridViewController.h */,
+				39E0BB271819B31900595A47 /* GridViewController.m */,
+				39E0BB291819B7E700595A47 /* Acell.h */,
+				39E0BB2A1819B7E700595A47 /* Acell.m */,
 				39E0BB041818A09B00595A47 /* SecondViewController.h */,
 				39E0BB051818A09B00595A47 /* SecondViewController.m */,
 				39E0BB071818A09B00595A47 /* Images.xcassets */,
@@ -260,6 +270,8 @@
 			files = (
 				39E0BB061818A09B00595A47 /* SecondViewController.m in Sources */,
 				39E0BAFD1818A09B00595A47 /* AppDelegate.m in Sources */,
+				39E0BB281819B31900595A47 /* GridViewController.m in Sources */,
+				39E0BB2B1819B7E700595A47 /* Acell.m in Sources */,
 				39E0BB031818A09B00595A47 /* FirstViewController.m in Sources */,
 				39E0BAF91818A09B00595A47 /* main.m in Sources */,
 			);
@@ -472,6 +484,7 @@
 				39E0BB201818A09B00595A47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39E0BB211818A09B00595A47 /* Build configuration list for PBXNativeTarget "DribbbleConceptTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +493,7 @@
 				39E0BB231818A09B00595A47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

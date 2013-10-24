@@ -88,6 +88,10 @@
     
     [[UITabBar appearance]setTintColor:[UIColor colorWithRed:0.48f green:0.67f blue:0.80f alpha:1.00f]];
     
+        // The TabBar shadow needs to be removed, so we'll just set it to a UIImage with no image.
+        // If you didn't remove the shadow, it will show up as a line going through the TabBar. The art assets
+        // I've used here are larger than the "standard" UITabBar, so the shadow would show up at about
+        // 49 pts. up from the bottom of the view.
     [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
 
     UIImage *tabBarBackground = [UIImage imageNamed:@"TabBarBackground.png"];
@@ -95,6 +99,29 @@
 
     [[UIView appearance]setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"pattern.png"]]];
     
+    
+    UIColor *lightBlue = [UIColor colorWithRed:0.48f green:0.67f blue:0.80f alpha:1.00f];
+    UIColor *black = [UIColor darkTextColor];
+    
+    NSDictionary *textAttributes = @{NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Medium" size:10.0f],
+                                     NSForegroundColorAttributeName : lightBlue};
+    
+    [[UITabBarItem appearance]setTitleTextAttributes:textAttributes forState:UIControlStateSelected];
+//    [[UITabBarItem appearance]setTitleTextAttributes:textAttributes forState:UIControlStateHighlighted];
+    
+    NSMutableDictionary *attrsCopy = [textAttributes mutableCopy];
+    
+        // Text Shadow
+    NSShadow *shadow = [[NSShadow alloc]init];
+    shadow.shadowOffset = (CGSize){0.0, 0.5};
+    shadow.shadowColor = [UIColor darkGrayColor];
+    shadow.shadowBlurRadius = 2.0f;
+    
+    attrsCopy[NSForegroundColorAttributeName] = black;
+    attrsCopy[NSShadowAttributeName] = shadow;
+    
+    [[UITabBarItem appearance]setTitleTextAttributes:attrsCopy forState:UIControlStateNormal];
+
 }
 
 

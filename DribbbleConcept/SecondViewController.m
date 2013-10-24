@@ -10,6 +10,7 @@
 
 @interface SecondViewController ()
 
+- (IBAction)pushLink:(id)sender;
 @end
 
 @implementation SecondViewController
@@ -26,4 +27,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)pushLink:(id)sender {
+    NSString *URL = @"http://dribbble.com/shots/694671-Buttons-Free-PSD?list=searches&tag=buttons_psd";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URL]];
+}
 @end
